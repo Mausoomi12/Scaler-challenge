@@ -1,3 +1,6 @@
 Some text for NewFile
 
 Trying to create conflict with 2nd-branch 
+
+
+Conflict with main
