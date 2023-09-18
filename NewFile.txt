@@ -1,1 +1,3 @@
 Some text for NewFile
+
+Conflict with main
