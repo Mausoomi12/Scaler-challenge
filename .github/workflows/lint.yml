@@ -2,9 +2,6 @@ name: Lint Code Base
 
 on: [push, pull_request]
 
-env:
-    GITHUB_TOKEN: ${{github.token}}
-
 jobs:
   build:
     name: Lint Code Base
@@ -19,3 +16,9 @@ jobs:
 
       - name: Lint Code Base
         uses: github/super-linter@v4
+        env:
+          VALIDATE_ALL_CODEBASE: true
+          VALIDATE_JAVASCRIPT_ES: true
+          VALIDATE_PYTHON_BLACK: true
+          VALIDATE_HTML: true
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
